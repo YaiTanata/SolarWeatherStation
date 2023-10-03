@@ -22,4 +22,5 @@ Solar Weather Station DIY with ESP32 fully supported Home Assistant via MQTT Dis
 ## Platform and dependencies
 The source code was written on PlatformIO IDE with Arduino framework.
 
-[def]: ./docs/connection_diagram.png
+Special Thank & Credit by Magi
+https://www.facebook.com/magiDIY
