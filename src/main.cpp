@@ -1,4 +1,3 @@
-// #include <Arduino.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
 #include <ArduinoHA.h>
@@ -6,16 +5,16 @@
 #include <HardwareSerial.h>
 #include <esp_task_wdt.h>
 #include <Wire.h>
-#include "SHTSensor.h"
+#include <SHTSensor.h>
 
 
-#define WIFI_STA_NAME "TANATA_IOT"
-#define WIFI_STA_PASS "YAI#P@ssw0rd"
+#define WIFI_STA_NAME "YOUR-WIFI-SSID"
+#define WIFI_STA_PASS "YOUR-WIFI-PASSWORD"
 
-#define MQTT_SERVER   "192.168.1.4"
+#define MQTT_SERVER   "MQTT-SERVER-IP"
 #define MQTT_PORT     1883
-#define MQTT_USERNAME "mqtt"
-#define MQTT_PASSWORD "mqttP@ssw0rd"
+#define MQTT_USERNAME "MQTT-USERNAME"
+#define MQTT_PASSWORD "MQTT-PASSWORD"
 #define MQTT_NAME     "Solar_weather_station"
 #define DEEP_SLEEP_NORMAL 5     //Deep sleep for 5 mins if battery sufficient
 #define DEEP_SLEEP_LOW 30       //Deep sleep for 30 mins if battery is running low
@@ -335,7 +334,7 @@ void setup() {
 
 
   haDevice->setName("SolarWeatherStation");
-  haDevice->setManufacturer("Tanata");
+  haDevice->setManufacturer("YaiTanat");
   haDevice->setModel("ESP32 WROVER B");
 
   haSensor_vBatt->setUnitOfMeasurement("V");
