@@ -5,7 +5,7 @@ Solar Weather Station DIY with ESP32 fully supported Home Assistant via MQTT Dis
 ![Connection_diagram](/docs/connection_diagram.png)
 
 ## TTGO-T18 ESP32 PIN
-![TTGO_T18_PIN](/docs/ttg018.jpeg)
+![TTGO_T18_PIN](/docs/ttgot18.jpg)
 
 ## Components
 - TTGO T18 ESP32 Development board
